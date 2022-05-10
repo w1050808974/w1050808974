@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+	string str;
+	string result;
+	while(cin>>str){
+		result=str+" "+result;
+		int c=getchar();
+		if(c=='\n')break;
+	}
+	result=result.substr(0,result.size()-1);
+	cout<<result;
+	return 0;
+}
